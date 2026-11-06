@@ -1,0 +1,18 @@
+* text=auto
+
+# shell 脚本必须 LF，否则在 Linux/macOS 上会被 ^M 卡住
+*.sh text eol=lf
+*.py text eol=lf
+*.pyw text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.tsv text eol=lf
+
+# Windows 批处理保持 CRLF
+*.bat text eol=crlf
+
+# 二进制资源不换行、不 diff
+*.ico binary
+*.onnx binary
+*.xml -text

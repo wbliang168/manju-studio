@@ -1,0 +1,12 @@
+# GUI / 编排侧依赖（用 python -m pip install -r requirements.txt 安装）
+# ComfyUI 本体、torch、模型权重不在这里，见 README。
+Pillow
+numpy
+requests
+opencv-python
+imageio-ffmpeg
+edge-tts
+comtypes ; sys_platform == "win32"
+
+# 只在打包 exe 时需要：
+# pyinstaller

@@ -1,0 +1,51 @@
+# 构建产物 / 二进制
+dist/
+dist_new/
+build/
+*.exe
+*.dll
+*.spec.bak
+
+# 模型权重（几十 GB，仓库不含；请自行下载并遵守各自许可）
+models/
+models_old/
+
+# 运行数据与用户内容
+input/
+output/
+*.tsv
+!examples/*.tsv
+*.log
+*.wav
+*.mp3
+*.flac
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.mov
+.autosave*.json
+canvas_probe.json
+canvas_push.json
+*_done.json
+shots_frames.json
+崩溃日志.txt
+ui_*.png
+
+# 本机配置：复制 example 改成自己的，不要提交
+config.json
+extra_model_paths.yaml
+
+# 备份 / 调试残留
+*.bak*
+*_old_*
+__pycache__/
+*.pyc
+.canvas-install-backups/
+.workbuddy/
+_mt/
+manju_studio/
+custom_nodes/
+bundled_nodes/
+docs/本机部署笔记.md

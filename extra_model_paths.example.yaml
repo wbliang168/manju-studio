@@ -1,0 +1,11 @@
+# 复制成 extra_model_paths.yaml，把 base_path 改成你自己放模型的目录。
+# 这个文件让 ComfyUI 从本目录读 H3 模型，不必把它们塞进 ComfyUI 自带的 models/。
+MiniMaxH3:
+    base_path: C:/path/to/your/models
+    checkpoints: checkpoints
+    diffusion_models: diffusion_models
+    unet: unet
+    text_encoders: text_encoders
+    vae: vae
+    loras: loras
+    clip_projections: clip_projections

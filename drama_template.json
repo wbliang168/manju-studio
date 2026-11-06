@@ -1,0 +1,25 @@
+{
+  "_说明": "照这个格式填一份新剧本，然后运行：python make_drama.py --script 你的剧本.json",
+  "_字段": {
+    "title": "漫剧标题（仅用于命名，可中文）",
+    "voice": "edge-tts 音色，默认 zh-CN-XiaoxiaoNeural（温暖女声）；可换 zh-CN-YunxiNeural 等",
+    "shots": "镜头数组，每镜三项：",
+    "  key":    "Z-Image 关键帧 prompt —— 决定这一镜的构图/影调/风格。建议每镜都写死统一影调（如'暖金绿写实雨林/电影感/柔和自然光/高细节/禁止文字'），这是'五镜统一'的关键。",
+    "  prompt": "H3 图生视频运动 prompt —— 只在关键帧上加真实运动，自动追加电影感运镜。无需再写构图/风格，否则会和关键帧打架。",
+    "  line":   "这一镜的中文旁白台词。建议 ≤ 5 秒（太长会触发缓推补帧）。系统会把视频长度截断/补足到旁白时长，做到'旁白=视频长度'。"
+  },
+  "title": "示例：第一颗香蕉是怎么来的",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "shots": [
+    {
+      "key": "电影感写实摄影,远古热带雨林清晨,金色阳光穿透树冠,薄雾流动,一棵发淡金微光的巨大神树,一只毛茸茸小猴停在藤蔓上仰望,宽大绿叶,丁达尔光束,暖金绿色调,柔和自然光,高细节,8k,电影级构图,禁止文字",
+      "prompt": "镜头缓缓推进，画面轻柔流动，微风拂动枝叶，电影感连续动态，subtle cinematic camera drift, gentle motion, leaves swaying, continuous fluid movement, no abrupt cuts, no static",
+      "line": "远古雨林，小猴发现一棵发金光的神树。"
+    },
+    {
+      "key": "电影感写实微距,特写,一根弯弯的明黄香蕉自然挂在神树枝叶间,表皮光滑带蜡质光泽,表面流转细密金色光纹,花粉般光点闪烁,背景虚化雨林绿意,暖金绿色调,柔和光,高细节,禁止文字",
+      "prompt": "镜头缓慢推近，光点在空中缓缓飘浮，柔和暖光呼吸般明灭，电影感微距，gentle push-in, floating light particles, cinematic macro, no static",
+      "line": "树上结着弯弯的、流转金光的奇异果实。"
+    }
+  ]
+}
