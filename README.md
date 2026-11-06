@@ -76,7 +76,7 @@ spec 里所有路径都相对 spec 所在目录，clone 到任何位置都能打
 - `mmh3-4b-ClipProj-v3.1-mlp.safetensors`（投影）
 - `minimax_h3_video_vae_fp16.safetensors`、`minimax_h3_audio_vae_fp32.safetensors`
 
-常见来源是 Comfy-Org/MiniMax-H3（HuggingFace / ModelScope 镜像）。**下载前看清模型作者许可**，本项目不替你授权。
+常见来源是 Comfy-Org/MiniMax-H3（HuggingFace / ModelScope 镜像），`model_map.py` 里也维护了一份常见权重的地址清单；具体文件名以你实际使用的 H3 工作流为准。**下载前看清模型作者许可**，本项目不替你授权。
 
 ## 已知限制
 
